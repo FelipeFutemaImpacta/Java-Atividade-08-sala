@@ -10,10 +10,7 @@ class JavaSpringTemplateApplicationTests {
 	@Test
 	public void shouldHavePFWithInterfacePessoa() {
 		
-		Pessoa pf = new PessoaFisica();
-		pf.setDocumento("45875412575");
-		pf.setTipo("PF");
-		
+		Pessoa pf = new PessoaFisica("45875412575", "PF");		
 		
 		assertEquals("PF", pf.getTipo());
 		
@@ -22,10 +19,7 @@ class JavaSpringTemplateApplicationTests {
 	@Test
 	public void shouldHavePJWithInterfacePessoa() {
 		
-		Pessoa pf = new PessoaJuridica();
-		pf.setDocumento("33293439000109");
-		pf.setTipo("PJ");
-		
+		Pessoa pf = new PessoaJuridica("33293439000109", "PJ");	
 		
 		assertEquals("PJ", pf.getTipo());
 		

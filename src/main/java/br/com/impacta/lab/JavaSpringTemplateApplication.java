@@ -7,13 +7,13 @@ public class JavaSpringTemplateApplication {
 		 * Crie duas classes diferentes no mesmo pacote:
 		 * 
 		 * 1-
-		 * PessoaFisica
+		 * PessoaFisica (Construtor recebendo os dois atributos)
 		 * Atributo			tipo do atributo
 		 * documento		String
 		 * tipo				String
 		 * 
 		 * 2-
-		 * PessoaJuridica
+		 * PessoaJuridica (Construtor recebendo os dois atributos)
 		 * Atributo			tipo do atributo
 		 * documento		String
 		 * tipo				String
@@ -29,9 +29,8 @@ public class JavaSpringTemplateApplication {
 		 * 
 		 */
 		
-		Pessoa pf = new PessoaFisica();
-		pf.setDocumento("45875412575");
-		pf.setTipo("PF");
+		Pessoa pf = new PessoaFisica("45875412575", "PF");
+
 		
 		
 		System.out.println(pf.falarDocumento());
